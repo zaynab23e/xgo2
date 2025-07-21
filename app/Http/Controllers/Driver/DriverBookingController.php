@@ -209,7 +209,7 @@ class DriverBookingController extends Controller
         }
 
         return response()->json([
-            'message' => __('messages.booking_details'),
+            'message' => __('messages.booking_details'), 
             'data'=> new BookingResource($booking),
         ], 200);
     }
